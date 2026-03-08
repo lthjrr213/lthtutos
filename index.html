@@ -1802,6 +1802,7 @@
             color: rgba(200, 185, 255, 0.85);
             line-height: 1.55;
         }
+
         .concept-example strong {
             display: block;
             font-size: 0.65rem;
@@ -1810,7 +1811,8 @@
             color: rgba(167, 139, 250, 0.6);
             margin-bottom: 0.3rem;
         }
-                .concept-card {
+
+        .concept-card {
             background: var(--bg3);
             border: 1px solid var(--border);
             border-radius: var(--radius);
@@ -2838,13 +2840,18 @@
             gap: 0.75rem;
             flex-wrap: wrap;
         }
+
         .footer-legal-links a {
             color: var(--text-muted, #8888aa);
             font-size: 0.78rem;
             text-decoration: none;
             transition: color 0.2s;
         }
-        .footer-legal-links a:hover { color: var(--js, #f7ca18); }
+
+        .footer-legal-links a:hover {
+            color: var(--js, #f7ca18);
+        }
+
         .footer-copy {
             font-family: var(--font-code);
             font-size: 0.68rem;
@@ -3068,9 +3075,9 @@
             top: 0 !important;
         }
     </style>
-    <meta name="google-adsense-account" content="ca-pub-8561820211737885">
     <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8561820211737885" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8561820211737885"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -3084,26 +3091,64 @@
         </div>
         <!-- Ligne 1 : Domaines -->
         <div class="navbar-tabs" id="domain-tabs">
-            <button class="nav-tab nav-domain-tab active-domain" id="dtab-algo" onclick="switchDomain('algo')" data-i18n="domain-algo">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            <button class="nav-tab nav-domain-tab active-domain" id="dtab-algo" onclick="switchDomain('algo')"
+                data-i18n="domain-algo">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                    <path d="M2 17l10 5 10-5" />
+                    <path d="M2 12l10 5 10-5" />
+                </svg>
                 Algorithmique</button>
-            <button class="nav-tab nav-domain-tab" id="dtab-frontend" onclick="switchDomain('frontend')" data-i18n="domain-frontend">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <button class="nav-tab nav-domain-tab" id="dtab-frontend" onclick="switchDomain('frontend')"
+                data-i18n="domain-frontend">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                </svg>
                 Front-end</button>
-            <button class="nav-tab nav-domain-tab" id="dtab-backend" onclick="switchDomain('backend')" data-i18n="domain-backend">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+            <button class="nav-tab nav-domain-tab" id="dtab-backend" onclick="switchDomain('backend')"
+                data-i18n="domain-backend">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+                    <path d="M4.93 4.93a10 10 0 0 0 0 14.14" />
+                </svg>
                 Back-end</button>
             <button class="nav-tab nav-domain-tab" id="dtab-bdd" onclick="switchDomain('bdd')" data-i18n="domain-bdd">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                </svg>
                 Base de données</button>
-            <button class="nav-tab nav-domain-tab" id="dtab-devops" onclick="switchDomain('devops')" data-i18n="domain-devops">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            <button class="nav-tab nav-domain-tab" id="dtab-devops" onclick="switchDomain('devops')"
+                data-i18n="domain-devops">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+                </svg>
                 DevOps</button>
-            <button class="nav-tab nav-domain-tab" id="dtab-mobile" onclick="switchDomain('mobile')" data-i18n="domain-mobile">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            <button class="nav-tab nav-domain-tab" id="dtab-mobile" onclick="switchDomain('mobile')"
+                data-i18n="domain-mobile">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                    <line x1="12" y1="18" x2="12.01" y2="18" />
+                </svg>
                 Mobile</button>
             <button class="nav-tab nav-domain-tab" id="dtab-ia" onclick="switchDomain('ia')" data-i18n="domain-ia">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v1h1a3 3 0 0 1 3 3v2a3 3 0 0 1-3 3h-1v1a4 4 0 0 1-8 0v-1H7a3 3 0 0 1-3-3v-2a3 3 0 0 1 3-3h1V6a4 4 0 0 1 4-4z"/><line x1="9" y1="10" x2="9" y2="14"/><line x1="15" y1="10" x2="15" y2="14"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M12 2a4 4 0 0 1 4 4v1h1a3 3 0 0 1 3 3v2a3 3 0 0 1-3 3h-1v1a4 4 0 0 1-8 0v-1H7a3 3 0 0 1-3-3v-2a3 3 0 0 1 3-3h1V6a4 4 0 0 1 4-4z" />
+                    <line x1="9" y1="10" x2="9" y2="14" />
+                    <line x1="15" y1="10" x2="15" y2="14" />
+                    <line x1="9" y1="12" x2="15" y2="12" />
+                </svg>
                 IA</button>
         </div>
         <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
@@ -3124,9 +3169,8 @@
         <div class="subnav-sep"></div>
         <!-- Quiz -->
         <div class="subnav-group" id="sn-quiz">
-            <button class="subnav-cat" id="sn-quiz-btn" onclick="goToQuiz()"><span
-                    data-i18n="subnav-quiz">Quiz</span> <span class="sn-arrow"
-                    onclick="event.stopPropagation();toggleSubcat('quiz')">▾</span></button>
+            <button class="subnav-cat" id="sn-quiz-btn" onclick="goToQuiz()"><span data-i18n="subnav-quiz">Quiz</span>
+                <span class="sn-arrow" onclick="event.stopPropagation();toggleSubcat('quiz')">▾</span></button>
             <div class="subnav-dropdown" id="sn-quiz-drop">
                 <!-- rempli par JS -->
             </div>
@@ -3320,42 +3364,53 @@
                             <div class="concept-desc">Suite finie et non-ambiguë d'instructions qui, à partir d'une
                                 entrée, produit une sortie en un temps fini. Un algorithme résout un problème de calcul
                                 bien défini.</div>
-                            <div class="concept-example"><strong>Exemple</strong>Recette de cuisine : entrée = ingrédients, instructions = étapes précises, sortie = plat prêt. Ou : trouver le max dans [3, 7, 2, 9, 1] → parcourir, comparer → sortie : 9.</div>
+                            <div class="concept-example"><strong>Exemple</strong>Recette de cuisine : entrée =
+                                ingrédients, instructions = étapes précises, sortie = plat prêt. Ou : trouver le max
+                                dans [3, 7, 2, 9, 1] → parcourir, comparer → sortie : 9.</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Pseudo-code</div>
                             <div class="concept-desc">Langage de description d'algorithmes, indépendant de tout langage
                                 de programmation. Il utilise des structures proches du français et du code :
                                 si/alors/sinon, pour, tant que.</div>
-                            <div class="concept-example"><strong>Exemple</strong>POUR i de 1 à n FAIRE<br>&nbsp;&nbsp;SI A[i] &gt; max ALORS<br>&nbsp;&nbsp;&nbsp;&nbsp;max ← A[i]<br>&nbsp;&nbsp;FIN SI<br>FIN POUR</div>
+                            <div class="concept-example"><strong>Exemple</strong>POUR i de 1 à n FAIRE<br>&nbsp;&nbsp;SI
+                                A[i] &gt; max ALORS<br>&nbsp;&nbsp;&nbsp;&nbsp;max ← A[i]<br>&nbsp;&nbsp;FIN SI<br>FIN
+                                POUR</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Invariant de boucle</div>
                             <div class="concept-desc">Propriété vraie avant, pendant et après chaque itération. Utilisé
                                 pour prouver la correction d'un algorithme. Trois conditions : Initialisation,
                                 Conservation, Terminaison.</div>
-                            <div class="concept-example"><strong>Exemple — Tri insertion</strong>Invariant : « A[1..i-1] est trié ».<br>Init : i=2, A[1..1] trié ✓<br>Conservation : on insère A[i] au bon endroit.<br>Terminaison : i=n+1 → A[1..n] trié ✓</div>
+                            <div class="concept-example"><strong>Exemple — Tri insertion</strong>Invariant : « A[1..i-1]
+                                est trié ».<br>Init : i=2, A[1..1] trié ✓<br>Conservation : on insère A[i] au bon
+                                endroit.<br>Terminaison : i=n+1 → A[1..n] trié ✓</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Récursivité</div>
                             <div class="concept-desc">Technique où une fonction s'appelle elle-même sur des
                                 sous-problèmes plus petits. Nécessite un cas de base et une réduction garantissant la
                                 terminaison.</div>
-                            <div class="concept-example"><strong>Exemple — Factorielle</strong>fact(0) = 1 ← cas de base<br>fact(n) = n × fact(n-1) ← réduction<br>fact(4) → 4×3×2×1 = 24</div>
+                            <div class="concept-example"><strong>Exemple — Factorielle</strong>fact(0) = 1 ← cas de
+                                base<br>fact(n) = n × fact(n-1) ← réduction<br>fact(4) → 4×3×2×1 = 24</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Correction</div>
                             <div class="concept-desc">Un algorithme est correct s'il s'arrête et produit le bon résultat
                                 pour toute entrée valide. On prouve la correction par invariants de boucle ou induction.
                             </div>
-                            <div class="concept-example"><strong>Exemple</strong>Recherche du max sur [3,7,2] :<br>• S'arrête après n=3 étapes ✓<br>• Retourne 7 (bien le max) ✓<br>→ algorithme correct pour tout tableau non vide.</div>
+                            <div class="concept-example"><strong>Exemple</strong>Recherche du max sur [3,7,2] :<br>•
+                                S'arrête après n=3 étapes ✓<br>• Retourne 7 (bien le max) ✓<br>→ algorithme correct pour
+                                tout tableau non vide.</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Instance d'un problème</div>
                             <div class="concept-desc">Une instance est une entrée particulière satisfaisant les
                                 contraintes du problème. Ex : trier [5,2,4,6,1,3] est une instance du problème du tri.
                             </div>
-                            <div class="concept-example"><strong>Exemple</strong>Problème : trouver le plus court chemin.<br>Instance : graphe G = {A→B:4, B→C:2, A→C:10}, départ A, arrivée C.<br>Solution : A→B→C = 6 (meilleur que A→C = 10).</div>
+                            <div class="concept-example"><strong>Exemple</strong>Problème : trouver le plus court
+                                chemin.<br>Instance : graphe G = {A→B:4, B→C:2, A→C:10}, départ A, arrivée
+                                C.<br>Solution : A→B→C = 6 (meilleur que A→C = 10).</div>
                         </div>
                     </div>
                     <pre class="code-block"><span class="code-lang">Pseudo-code — Tri par insertion</span>
@@ -3404,42 +3459,53 @@ RECHERCHE-DICHO(A, v, gauche, droite)
                             <div class="concept-desc">Borne asymptotique exacte. f(n) = Θ(g(n)) signifie que f est
                                 bornée à la fois par en haut et en bas par g, aux facteurs constants près. Ex : tri par
                                 insertion = Θ(n²) au pire.</div>
-                            <div class="concept-example"><strong>Exemple</strong>f(n) = 3n² + 5n + 2<br>→ Θ(n²) car 3n² ≤ f(n) ≤ 4n² pour n assez grand.<br>Le tri par insertion fait exactement Θ(n²) comparaisons au pire.</div>
+                            <div class="concept-example"><strong>Exemple</strong>f(n) = 3n² + 5n + 2<br>→ Θ(n²) car 3n²
+                                ≤ f(n) ≤ 4n² pour n assez grand.<br>Le tri par insertion fait exactement Θ(n²)
+                                comparaisons au pire.</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Notation O (Grand O)</div>
                             <div class="concept-desc">Borne supérieure asymptotique. f(n) = O(g(n)) signifie que f ne
                                 croît pas plus vite que g. C'est la mesure de complexité dans le cas le plus
                                 défavorable.</div>
-                            <div class="concept-example"><strong>Exemple</strong>Recherche linéaire dans [3,7,1,9,2] :<br>• Pire cas : élément absent → n comparaisons → O(n).<br>• On peut dire aussi O(n²) (borne valide, mais pas tight).</div>
+                            <div class="concept-example"><strong>Exemple</strong>Recherche linéaire dans [3,7,1,9,2]
+                                :<br>• Pire cas : élément absent → n comparaisons → O(n).<br>• On peut dire aussi O(n²)
+                                (borne valide, mais pas tight).</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Notation Ω (Omega)</div>
                             <div class="concept-desc">Borne inférieure asymptotique. f(n) = Ω(g(n)) signifie que f croît
                                 au moins aussi vite que g. Ex : tout algorithme de tri par comparaison est Ω(n lg n).
                             </div>
-                            <div class="concept-example"><strong>Exemple</strong>Tri fusion sur n=8 éléments :<br>• Fait toujours ≥ n·lg(n)/2 comparaisons.<br>→ T(n) = Ω(n lg n) : on ne peut pas faire mieux en comparatif.</div>
+                            <div class="concept-example"><strong>Exemple</strong>Tri fusion sur n=8 éléments :<br>• Fait
+                                toujours ≥ n·lg(n)/2 comparaisons.<br>→ T(n) = Ω(n lg n) : on ne peut pas faire mieux en
+                                comparatif.</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Cas favorable / défavorable</div>
                             <div class="concept-desc">Le cas défavorable donne une garantie de performance. Le cas moyen
                                 est utile en pratique mais plus difficile à analyser. On privilégie souvent le pire cas.
                             </div>
-                            <div class="concept-example"><strong>Exemple — Tri rapide</strong>Favorable : pivot toujours médian → Θ(n lg n).<br>Défavorable : tableau déjà trié, pivot = min → Θ(n²).<br>Moyen (pivot aléatoire) : Θ(n lg n) en espérance.</div>
+                            <div class="concept-example"><strong>Exemple — Tri rapide</strong>Favorable : pivot toujours
+                                médian → Θ(n lg n).<br>Défavorable : tableau déjà trié, pivot = min → Θ(n²).<br>Moyen
+                                (pivot aléatoire) : Θ(n lg n) en espérance.</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Complexité spatiale</div>
                             <div class="concept-desc">Quantité de mémoire utilisée en fonction de la taille n de
                                 l'entrée. Un algorithme en-place utilise O(1) mémoire auxiliaire (ex : tri par
                                 insertion).</div>
-                            <div class="concept-example"><strong>Exemple</strong>Tri fusion : copie L et R → O(n) mémoire auxiliaire.<br>Tri par insertion : échange en place → O(1) auxiliaire.<br>DFS récursif sur graphe : pile d'appels → O(V) espace.</div>
+                            <div class="concept-example"><strong>Exemple</strong>Tri fusion : copie L et R → O(n)
+                                mémoire auxiliaire.<br>Tri par insertion : échange en place → O(1) auxiliaire.<br>DFS
+                                récursif sur graphe : pile d'appels → O(V) espace.</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Récurrences</div>
                             <div class="concept-desc">Équations définissant T(n) en fonction de T sur des
                                 sous-problèmes. Méthodes de résolution : substitution, arbre récursif, théorème général
                                 (Master Theorem).</div>
-                            <div class="concept-example"><strong>Exemple — Tri fusion</strong>T(1) = Θ(1)<br>T(n) = 2·T(n/2) + Θ(n)<br>→ Master Thm, cas 2 : T(n) = Θ(n lg n).</div>
+                            <div class="concept-example"><strong>Exemple — Tri fusion</strong>T(1) = Θ(1)<br>T(n) =
+                                2·T(n/2) + Θ(n)<br>→ Master Thm, cas 2 : T(n) = Θ(n lg n).</div>
                         </div>
                     </div>
 
@@ -3538,40 +3604,49 @@ RECHERCHE-DICHO(A, v, gauche, droite)
                             <div class="concept-desc">Construit le tableau trié élément par élément. Efficace pour les
                                 petits tableaux ou presque-triés. En-place. Stable. Analogue à trier des cartes à la
                                 main.</div>
-                            <div class="concept-example"><strong>Exemple</strong>[5, 2, 4, 1]<br>i=2 : insérer 2 → [2,5,4,1]<br>i=3 : insérer 4 → [2,4,5,1]<br>i=4 : insérer 1 → [1,2,4,5] ✓</div>
+                            <div class="concept-example"><strong>Exemple</strong>[5, 2, 4, 1]<br>i=2 : insérer 2 →
+                                [2,5,4,1]<br>i=3 : insérer 4 → [2,4,5,1]<br>i=4 : insérer 1 → [1,2,4,5] ✓</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Tri par fusion — Θ(n lg n)</div>
                             <div class="concept-desc">Diviser-pour-régner : divise le tableau en deux, trie
                                 récursivement, fusionne. Toujours Θ(n lg n). Stable. Nécessite O(n) mémoire auxiliaire.
                             </div>
-                            <div class="concept-example"><strong>Exemple</strong>[3,1,4,2]<br>Diviser : [3,1] | [4,2]<br>Trier : [1,3] | [2,4]<br>Fusionner : [1,2,3,4] ✓</div>
+                            <div class="concept-example"><strong>Exemple</strong>[3,1,4,2]<br>Diviser : [3,1] |
+                                [4,2]<br>Trier : [1,3] | [2,4]<br>Fusionner : [1,2,3,4] ✓</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Tri rapide — O(n lg n) moy.</div>
                             <div class="concept-desc">Choisit un pivot, partitionne, trie récursivement. Cas moyen Θ(n
                                 lg n), cas défavorable O(n²). En-place. Non stable. Très efficace en pratique.</div>
-                            <div class="concept-example"><strong>Exemple — pivot = dernier</strong>[3,6,8,10,1,2,1], pivot=1<br>Partition : [1,1 | 3,6,8,10,2]<br>Récursion sur chaque partie → tableau trié.</div>
+                            <div class="concept-example"><strong>Exemple — pivot = dernier</strong>[3,6,8,10,1,2,1],
+                                pivot=1<br>Partition : [1,1 | 3,6,8,10,2]<br>Récursion sur chaque partie → tableau trié.
+                            </div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Tri par tas — Θ(n lg n)</div>
                             <div class="concept-desc">Utilise une structure de tas (heap). Toujours Θ(n lg n). En-place.
                                 Non stable. Combine les avantages du tri par insertion (en-place) et du tri par fusion
                                 (n lg n).</div>
-                            <div class="concept-example"><strong>Exemple</strong>[4,1,3,2,16,9,10]<br>1. Construire tas-max : [16,4,10,2,1,9,3]<br>2. Extraire max 16 → placer à la fin, répéter.<br>→ Résultat : [1,2,3,4,9,10,16] ✓</div>
+                            <div class="concept-example"><strong>Exemple</strong>[4,1,3,2,16,9,10]<br>1. Construire
+                                tas-max : [16,4,10,2,1,9,3]<br>2. Extraire max 16 → placer à la fin, répéter.<br>→
+                                Résultat : [1,2,3,4,9,10,16] ✓</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Tri par dénombrement — O(n+k)</div>
                             <div class="concept-desc">Pour des entiers dans [0,k]. Compte les occurrences. Temps
                                 linéaire si k = O(n). Non comparatif. Stable. Nécessite O(k) mémoire.</div>
-                            <div class="concept-example"><strong>Exemple — k=5</strong>A=[2,5,3,0,2,3,0,3]<br>Compter : C=[2,0,2,3,0,1]<br>Cumuler : C=[2,2,4,7,7,8]<br>→ B=[0,0,2,2,3,3,3,5] ✓</div>
+                            <div class="concept-example"><strong>Exemple — k=5</strong>A=[2,5,3,0,2,3,0,3]<br>Compter :
+                                C=[2,0,2,3,0,1]<br>Cumuler : C=[2,2,4,7,7,8]<br>→ B=[0,0,2,2,3,3,3,5] ✓</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Borne inférieure Ω(n lg n)</div>
                             <div class="concept-desc">Tout algorithme de tri par comparaison nécessite au moins Ω(n lg
                                 n) comparaisons dans le pire cas. Preuve par arbre de décision. Le tri par fusion est
                                 donc optimal.</div>
-                            <div class="concept-example"><strong>Preuve intuitive</strong>Pour trier n=3 éléments : 3! = 6 permutations possibles.<br>Arbre de décision a ≥ 6 feuilles → hauteur ≥ ⌈lg 6⌉ = 3.<br>→ Au moins 3 comparaisons nécessaires, confirme Ω(n lg n).</div>
+                            <div class="concept-example"><strong>Preuve intuitive</strong>Pour trier n=3 éléments : 3! =
+                                6 permutations possibles.<br>Arbre de décision a ≥ 6 feuilles → hauteur ≥ ⌈lg 6⌉ =
+                                3.<br>→ Au moins 3 comparaisons nécessaires, confirme Ω(n lg n).</div>
                         </div>
                     </div>
 
@@ -3622,55 +3697,69 @@ TRI-RAPIDE(A, p, r)
                             <div class="concept-title">Tableau (Array)</div>
                             <div class="concept-desc">Accès direct en O(1) par indice. Insertion/suppression O(n).
                                 Taille fixe (statique) ou dynamique. Base de la plupart des structures de données.</div>
-                            <div class="concept-example"><strong>Exemple</strong>A = [10, 20, 30, 40, 50]<br>A[2] → 30 en O(1) ✓<br>Insérer 15 en pos 1 : décaler A[1..4] → O(n).</div>
+                            <div class="concept-example"><strong>Exemple</strong>A = [10, 20, 30, 40, 50]<br>A[2] → 30
+                                en O(1) ✓<br>Insérer 15 en pos 1 : décaler A[1..4] → O(n).</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Liste chaînée</div>
                             <div class="concept-desc">Éléments reliés par pointeurs. Insertion/suppression en O(1) si
                                 pointeur connu. Accès en O(n). Simplement ou doublement chaînée. Pas d'accès aléatoire.
                             </div>
-                            <div class="concept-example"><strong>Exemple</strong>3 → 7 → 1 → 9 → NIL<br>Insérer 5 après 7 : changer pointeurs → O(1).<br>Trouver 9 : parcourir 3→7→1→9 → O(n).</div>
+                            <div class="concept-example"><strong>Exemple</strong>3 → 7 → 1 → 9 → NIL<br>Insérer 5 après
+                                7 : changer pointeurs → O(1).<br>Trouver 9 : parcourir 3→7→1→9 → O(n).</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Pile (Stack) — LIFO</div>
                             <div class="concept-desc">Last In First Out. Opérations EMPILER et DÉPILER en O(1). Utilisée
                                 pour la récursion, l'évaluation d'expressions, l'annulation d'actions (Ctrl+Z).</div>
-                            <div class="concept-example"><strong>Exemple — parenthèses</strong>Vérifier "(a+(b*c))" :<br>( → empiler ; ) → dépiler et apparier.<br>Pile vide à la fin → expression valide ✓</div>
+                            <div class="concept-example"><strong>Exemple — parenthèses</strong>Vérifier "(a+(b*c))"
+                                :<br>( → empiler ; ) → dépiler et apparier.<br>Pile vide à la fin → expression valide ✓
+                            </div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">File (Queue) — FIFO</div>
                             <div class="concept-desc">First In First Out. Opérations ENFILER et DÉFILER en O(1).
                                 Utilisée pour la gestion de tâches, BFS (parcours en largeur), tampons de communication.
                             </div>
-                            <div class="concept-example"><strong>Exemple — BFS</strong>Graphe : A–B, A–C, B–D<br>Enfiler A. Défiler A → enfiler B,C.<br>Défiler B → enfiler D. Défiler C, D.<br>Ordre visité : A, B, C, D ✓</div>
+                            <div class="concept-example"><strong>Exemple — BFS</strong>Graphe : A–B, A–C, B–D<br>Enfiler
+                                A. Défiler A → enfiler B,C.<br>Défiler B → enfiler D. Défiler C, D.<br>Ordre visité : A,
+                                B, C, D ✓</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Table de hachage</div>
                             <div class="concept-desc">Accès, insertion, suppression en O(1) moyen. Utilise une fonction
                                 de hachage h(k) pour calculer l'indice. Gestion des collisions : chaînage ou adressage
                                 ouvert.</div>
-                            <div class="concept-example"><strong>Exemple — m=7</strong>h(k) = k mod 7<br>Insérer 10 → h(10)=3, 22 → h(22)=1, 31 → h(31)=3.<br>Collision 10 et 31 en case 3 → chaînage : 3→[10→31].</div>
+                            <div class="concept-example"><strong>Exemple — m=7</strong>h(k) = k mod 7<br>Insérer 10 →
+                                h(10)=3, 22 → h(22)=1, 31 → h(31)=3.<br>Collision 10 et 31 en case 3 → chaînage :
+                                3→[10→31].</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Arbre binaire de recherche</div>
                             <div class="concept-desc">Chaque nœud : sous-arbre gauche ≤ nœud &lt; sous-arbre droit.
                                 Recherche, insertion, suppression en O(h). Si équilibré : h = O(lg n). Peut dégénérer en
                                 O(n).</div>
-                            <div class="concept-example"><strong>Exemple</strong>Insérer 5,3,7,1,4 :<br>&nbsp;&nbsp;&nbsp;5<br>&nbsp;3&nbsp;&nbsp;7<br>1&nbsp;4<br>Rechercher 4 : 5→3→4 → trouvé en 3 étapes ✓</div>
+                            <div class="concept-example"><strong>Exemple</strong>Insérer 5,3,7,1,4
+                                :<br>&nbsp;&nbsp;&nbsp;5<br>&nbsp;3&nbsp;&nbsp;7<br>1&nbsp;4<br>Rechercher 4 : 5→3→4 →
+                                trouvé en 3 étapes ✓</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Tas (Heap)</div>
                             <div class="concept-desc">Arbre binaire presque complet. Propriété tas-max : parent ≥
                                 enfants. INSÉRER et EXTRAIRE-MAX en O(lg n). Base du tri par tas et des files de
                                 priorité.</div>
-                            <div class="concept-example"><strong>Exemple — tas-max</strong>Tableau [16,14,10,8,7,9,3]<br>Parent 16 ≥ enfants 14,10 ✓<br>EXTRAIRE-MAX → 16, replacer 3 en racine, ENTASSER → [14,8,10,3,7,9] ✓</div>
+                            <div class="concept-example"><strong>Exemple — tas-max</strong>Tableau
+                                [16,14,10,8,7,9,3]<br>Parent 16 ≥ enfants 14,10 ✓<br>EXTRAIRE-MAX → 16, replacer 3 en
+                                racine, ENTASSER → [14,8,10,3,7,9] ✓</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Graphe</div>
                             <div class="concept-desc">Ensemble de sommets V et d'arêtes E. Représenté par liste
                                 d'adjacence (O(V+E)) ou matrice d'adjacence (O(V²)). Orienté ou non orienté, pondéré ou
                                 non.</div>
-                            <div class="concept-example"><strong>Exemple</strong>V={A,B,C,D}, E={A–B, A–C, B–D, C–D}<br>Liste adj : A:[B,C], B:[A,D], C:[A,D], D:[B,C]<br>BFS depuis A → ordre : A,B,C,D.</div>
+                            <div class="concept-example"><strong>Exemple</strong>V={A,B,C,D}, E={A–B, A–C, B–D,
+                                C–D}<br>Liste adj : A:[B,C], B:[A,D], C:[A,D], D:[B,C]<br>BFS depuis A → ordre :
+                                A,B,C,D.</div>
                         </div>
                     </div>
 
@@ -3731,42 +3820,54 @@ DFS-VISITER(G, u)
                             <div class="concept-desc">Diviser le problème en sous-problèmes similaires, résoudre
                                 récursivement, combiner. Ex : tri fusion, tri rapide, recherche dichotomique, algorithme
                                 de Strassen.</div>
-                            <div class="concept-example"><strong>Exemple — Recherche dichotomique</strong>Chercher 7 dans [1,3,5,7,9,11] :<br>Milieu=5 → 7&gt;5 → chercher dans [7,9,11].<br>Milieu=9 → 7&lt;9 → chercher dans [7].<br>Trouvé ! O(lg n) au lieu de O(n).</div>
+                            <div class="concept-example"><strong>Exemple — Recherche dichotomique</strong>Chercher 7
+                                dans [1,3,5,7,9,11] :<br>Milieu=5 → 7&gt;5 → chercher dans [7,9,11].<br>Milieu=9 →
+                                7&lt;9 → chercher dans [7].<br>Trouvé ! O(lg n) au lieu de O(n).</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Programmation dynamique</div>
                             <div class="concept-desc">Résout les problèmes à sous-structure optimale en mémorisant les
                                 solutions de sous-problèmes (mémoïsation ou tabulation). Ex : plus longue sous-séquence
                                 commune, sac à dos.</div>
-                            <div class="concept-example"><strong>Exemple — Fibonacci</strong>fib(5) sans mémo : 15 appels récursifs.<br>Avec mémo : fib(2)=1, fib(3)=2, fib(4)=3, fib(5)=5.<br>→ 5 calculs seulement, O(n) au lieu de O(2ⁿ).</div>
+                            <div class="concept-example"><strong>Exemple — Fibonacci</strong>fib(5) sans mémo : 15
+                                appels récursifs.<br>Avec mémo : fib(2)=1, fib(3)=2, fib(4)=3, fib(5)=5.<br>→ 5 calculs
+                                seulement, O(n) au lieu de O(2ⁿ).</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Algorithmes gloutons</div>
                             <div class="concept-desc">À chaque étape, fait le choix localement optimal. Simple et
                                 efficace, mais ne fonctionne pas pour tous les problèmes. Ex : algorithme de Kruskal, de
                                 Dijkstra, rendu de monnaie.</div>
-                            <div class="concept-example"><strong>Exemple — Rendu de monnaie</strong>Rendre 41 cts avec {25,10,5,1} :<br>Glouton : 25¢ → reste 16¢ → 10¢ → reste 6¢ → 5¢ → 1¢.<br>4 pièces. Optimal ici ✓ (pas toujours le cas !).</div>
+                            <div class="concept-example"><strong>Exemple — Rendu de monnaie</strong>Rendre 41 cts avec
+                                {25,10,5,1} :<br>Glouton : 25¢ → reste 16¢ → 10¢ → reste 6¢ → 5¢ → 1¢.<br>4 pièces.
+                                Optimal ici ✓ (pas toujours le cas !).</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Recherche exhaustive</div>
                             <div class="concept-desc">Enumère toutes les solutions possibles. Garantit de trouver
                                 l'optimum mais souvent exponentiel. Utilisé quand n est petit ou comme base de
                                 comparaison.</div>
-                            <div class="concept-example"><strong>Exemple — Sac à dos (n=3)</strong>Objets : {2kg/3€, 3kg/4€, 4kg/5€}, capacité=5kg.<br>Tester 2³=8 sous-ensembles → meilleur : {2kg,3kg}=7€.<br>Fonctionne pour n petit, impraticable pour n&gt;30.</div>
+                            <div class="concept-example"><strong>Exemple — Sac à dos (n=3)</strong>Objets : {2kg/3€,
+                                3kg/4€, 4kg/5€}, capacité=5kg.<br>Tester 2³=8 sous-ensembles → meilleur :
+                                {2kg,3kg}=7€.<br>Fonctionne pour n petit, impraticable pour n&gt;30.</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Problèmes NP-complets</div>
                             <div class="concept-desc">Classe de problèmes pour lesquels aucun algorithme polynomial
                                 n'est connu. Ex : voyageur de commerce, problème du sac à dos, satisfaisabilité. On
                                 utilise des algorithmes d'approximation.</div>
-                            <div class="concept-example"><strong>Exemple — TSP</strong>4 villes A,B,C,D : trouver le circuit le plus court.<br>Vérifier une solution : O(n) ✓ (NP).<br>Trouver l'optimale : (n-1)!/2 = 3 circuits pour n=4, mais 60 milliards pour n=14 !</div>
+                            <div class="concept-example"><strong>Exemple — TSP</strong>4 villes A,B,C,D : trouver le
+                                circuit le plus court.<br>Vérifier une solution : O(n) ✓ (NP).<br>Trouver l'optimale :
+                                (n-1)!/2 = 3 circuits pour n=4, mais 60 milliards pour n=14 !</div>
                         </div>
                         <div class="concept-card">
                             <div class="concept-title">Analyse amortie</div>
                             <div class="concept-desc">Calcule le coût moyen d'une opération sur une séquence
                                 d'opérations. Méthodes : agrégat, comptable, potentiel. Utile pour tables dynamiques,
                                 tas de Fibonacci.</div>
-                            <div class="concept-example"><strong>Exemple — Table dynamique</strong>Doubler la table quand pleine (coûts : 1,1,2,1,4,1,1,1,8,1…)<br>n insertions : coût total = O(n).<br>Coût amorti par insertion = O(n)/n = O(1) ✓</div>
+                            <div class="concept-example"><strong>Exemple — Table dynamique</strong>Doubler la table
+                                quand pleine (coûts : 1,1,2,1,4,1,1,1,8,1…)<br>n insertions : coût total = O(n).<br>Coût
+                                amorti par insertion = O(n)/n = O(1) ✓</div>
                         </div>
                     </div>
 
@@ -3890,7 +3991,10 @@ RELACHER(u, v, w)
                                         et se ferment &lt;/tag&gt;. Certaines sont auto-fermantes comme &lt;img /&gt; ou
                                         &lt;br
                                         /&gt;.</div>
-                                    <div class="concept-example"><strong>Exemple</strong>&lt;p&gt;Bonjour&lt;/p&gt; — paragraphe ouvrant+fermant.<br>&lt;img src="photo.jpg" /&gt; — auto-fermante.<br>&lt;h1&gt;Titre&lt;/h1&gt; → rendu : titre principal en gras.</div>
+                                    <div class="concept-example"><strong>Exemple</strong>&lt;p&gt;Bonjour&lt;/p&gt; —
+                                        paragraphe ouvrant+fermant.<br>&lt;img src="photo.jpg" /&gt; —
+                                        auto-fermante.<br>&lt;h1&gt;Titre&lt;/h1&gt; → rendu : titre principal en gras.
+                                    </div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">🔖</div>
@@ -3898,7 +4002,12 @@ RELACHER(u, v, w)
                                     <div class="concept-desc">Les attributs fournissent des informations supplémentaires
                                         aux
                                         balises. Ex: &lt;a href="url"&gt;, &lt;img src="photo.jpg" alt="desc"&gt;</div>
-                                    <div class="concept-example"><strong>Exemple</strong>&lt;a href="https://exemple.fr" target="_blank"&gt;Lien&lt;/a&gt;<br>→ href = destination, target="_blank" = nouvel onglet.<br>&lt;input type="email" required placeholder="<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7b0f14153b161a1217551d09">[email&#160;protected]</a>"&gt;</div>
+                                    <div class="concept-example"><strong>Exemple</strong>&lt;a href="https://exemple.fr"
+                                        target="_blank"&gt;Lien&lt;/a&gt;<br>→ href = destination, target="_blank" =
+                                        nouvel onglet.<br>&lt;input type="email" required placeholder="<a
+                                            href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                            data-cfemail="7b0f14153b161a1217551d09">[email&#160;protected]</a>"&gt;
+                                    </div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">🌳</div>
@@ -3906,7 +4015,10 @@ RELACHER(u, v, w)
                                     <div class="concept-desc">Le navigateur parse le HTML et construit un arbre d'objets
                                         appelé
                                         DOM (Document Object Model) que JS peut manipuler.</div>
-                                    <div class="concept-example"><strong>Exemple</strong>&lt;body&gt; → enfants : &lt;h1&gt;, &lt;p&gt;, &lt;div&gt;<br>JS : document.querySelector('h1').textContent = 'Salut';<br>→ modifie le titre en temps réel sans recharger la page.</div>
+                                    <div class="concept-example"><strong>Exemple</strong>&lt;body&gt; → enfants :
+                                        &lt;h1&gt;, &lt;p&gt;, &lt;div&gt;<br>JS :
+                                        document.querySelector('h1').textContent = 'Salut';<br>→ modifie le titre en
+                                        temps réel sans recharger la page.</div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">♿</div>
@@ -3915,7 +4027,10 @@ RELACHER(u, v, w)
                                         &lt;article&gt;)
                                         aide
                                         les lecteurs d'écran. Les attributs ARIA complètent l'accessibilité.</div>
-                                    <div class="concept-example"><strong>Exemple</strong>&lt;button aria-label="Fermer la fenêtre"&gt;✕&lt;/button&gt;<br>→ Le lecteur d'écran annonce "Fermer la fenêtre" au lieu de "✕".<br>&lt;img src="chat.jpg" alt="Chat roux endormi"&gt; → description vocale.</div>
+                                    <div class="concept-example"><strong>Exemple</strong>&lt;button aria-label="Fermer
+                                        la fenêtre"&gt;✕&lt;/button&gt;<br>→ Le lecteur d'écran annonce "Fermer la
+                                        fenêtre" au lieu de "✕".<br>&lt;img src="chat.jpg" alt="Chat roux endormi"&gt; →
+                                        description vocale.</div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">🔍</div>
@@ -3924,14 +4039,20 @@ RELACHER(u, v, w)
                                         &lt;h1&gt;-&lt;h6&gt;
                                         et
                                         la structure sémantique influencent directement le référencement.</div>
-                                    <div class="concept-example"><strong>Exemple</strong>&lt;title&gt;Guide HTML — Apprendre le web&lt;/title&gt;<br>&lt;meta name="description" content="Guide complet pour débuter..."&gt;<br>→ Titre + description apparaissent dans les résultats Google.</div>
+                                    <div class="concept-example"><strong>Exemple</strong>&lt;title&gt;Guide HTML —
+                                        Apprendre le web&lt;/title&gt;<br>&lt;meta name="description" content="Guide
+                                        complet pour débuter..."&gt;<br>→ Titre + description apparaissent dans les
+                                        résultats Google.</div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">📱</div>
                                     <div class="concept-title" data-i18n="concept-html5">HTML5</div>
                                     <div class="concept-desc">La version actuelle apporte &lt;video&gt;, &lt;audio&gt;,
                                         &lt;canvas&gt;, &lt;section&gt;, &lt;article&gt; et l'API localStorage.</div>
-                                    <div class="concept-example"><strong>Exemple</strong>&lt;video src="film.mp4" controls autoplay&gt;&lt;/video&gt;<br>&lt;input type="date"&gt; → sélecteur de date natif.<br>localStorage.setItem('user','Alice') → stockage persistant côté client.</div>
+                                    <div class="concept-example"><strong>Exemple</strong>&lt;video src="film.mp4"
+                                        controls autoplay&gt;&lt;/video&gt;<br>&lt;input type="date"&gt; → sélecteur de
+                                        date natif.<br>localStorage.setItem('user','Alice') → stockage persistant côté
+                                        client.</div>
                                 </div>
                             </div>
                         </div>
@@ -4192,7 +4313,10 @@ RELACHER(u, v, w)
                                     <div class="concept-desc">Les styles "cascadent" selon leur spécificité : inline
                                         &gt; id
                                         &gt; class &gt; tag. Le dernier déclaré gagne à égalité.</div>
-                                    <div class="concept-example"><strong>Exemple</strong>p { color: blue; } /* spécificité 1 */<br>.texte { color: red; } /* spécificité 10 */<br>#titre { color: green; } /* spécificité 100 → gagne */<br>&lt;p id="titre" class="texte"&gt; → couleur : vert ✓</div>
+                                    <div class="concept-example"><strong>Exemple</strong>p { color: blue; } /*
+                                        spécificité 1 */<br>.texte { color: red; } /* spécificité 10 */<br>#titre {
+                                        color: green; } /* spécificité 100 → gagne */<br>&lt;p id="titre"
+                                        class="texte"&gt; → couleur : vert ✓</div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">📦</div>
@@ -4200,14 +4324,18 @@ RELACHER(u, v, w)
                                     <div class="concept-desc">Chaque élément est une boîte : content → padding → border
                                         →
                                         margin. box-sizing: border-box inclut padding+border dans la taille.</div>
-                                    <div class="concept-example"><strong>Exemple</strong>width:200px + padding:20px + border:2px<br>Sans border-box → rendu réel = 244px (surprise !)<br>Avec box-sizing:border-box → rendu réel = 200px ✓ (recommandé)</div>
+                                    <div class="concept-example"><strong>Exemple</strong>width:200px + padding:20px +
+                                        border:2px<br>Sans border-box → rendu réel = 244px (surprise !)<br>Avec
+                                        box-sizing:border-box → rendu réel = 200px ✓ (recommandé)</div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">🧮</div>
                                     <div class="concept-title" data-i18n="concept-cssvar">Variables CSS</div>
                                     <div class="concept-desc">--ma-variable: valeur; dans :root. Utilisation avec
                                         var(--ma-variable). Idéal pour les thèmes et la cohérence.</div>
-                                    <div class="concept-example"><strong>Exemple</strong>:root { --couleur-primaire: #e34c26; }<br>h1 { color: var(--couleur-primaire); }<br>button { background: var(--couleur-primaire); }<br>→ Changer 1 ligne change tout le thème ✓</div>
+                                    <div class="concept-example"><strong>Exemple</strong>:root { --couleur-primaire:
+                                        #e34c26; }<br>h1 { color: var(--couleur-primaire); }<br>button { background:
+                                        var(--couleur-primaire); }<br>→ Changer 1 ligne change tout le thème ✓</div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">📐</div>
@@ -4215,7 +4343,9 @@ RELACHER(u, v, w)
                                     <div class="concept-desc">Disposition unidimensionnelle (ligne ou colonne). display:
                                         flex.
                                         Align-items, justify-content, flex-wrap, gap.</div>
-                                    <div class="concept-example"><strong>Exemple — Centrer un élément</strong>.conteneur { display:flex; justify-content:center; align-items:center; height:100vh; }<br>→ L'enfant est parfaitement centré horizontalement ET verticalement ✓</div>
+                                    <div class="concept-example"><strong>Exemple — Centrer un élément</strong>.conteneur
+                                        { display:flex; justify-content:center; align-items:center; height:100vh; }<br>→
+                                        L'enfant est parfaitement centré horizontalement ET verticalement ✓</div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">🔲</div>
@@ -4224,7 +4354,9 @@ RELACHER(u, v, w)
                                         display:
                                         grid.
                                         grid-template-columns, grid-area, gap.</div>
-                                    <div class="concept-example"><strong>Exemple — 3 colonnes égales</strong>.grille { display:grid; grid-template-columns: repeat(3, 1fr); gap:1rem; }<br>→ 3 colonnes qui se partagent l'espace équitablement, espacées de 1rem.</div>
+                                    <div class="concept-example"><strong>Exemple — 3 colonnes égales</strong>.grille {
+                                        display:grid; grid-template-columns: repeat(3, 1fr); gap:1rem; }<br>→ 3 colonnes
+                                        qui se partagent l'espace équitablement, espacées de 1rem.</div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">✨</div>
@@ -4232,7 +4364,10 @@ RELACHER(u, v, w)
                                     <div class="concept-desc">@keyframes pour définir une animation. animation: nom
                                         durée
                                         easing. transition pour les changements d'état au hover.</div>
-                                    <div class="concept-example"><strong>Exemple — Fade in</strong>@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }<br>.carte { animation: fadeIn 0.5s ease-in; }<br>button:hover { background: #red; transition: background 0.3s; }</div>
+                                    <div class="concept-example"><strong>Exemple — Fade in</strong>@keyframes fadeIn {
+                                        from { opacity:0; } to { opacity:1; } }<br>.carte { animation: fadeIn 0.5s
+                                        ease-in; }<br>button:hover { background: #red; transition: background 0.3s; }
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -4459,7 +4594,9 @@ RELACHER(u, v, w)
                                     <div class="concept-desc">const pour les valeurs fixes, let pour les valeurs
                                         changeantes.
                                         Éviter var (portée problématique et hoisting surprenant).</div>
-                                    <div class="concept-example"><strong>Exemple</strong>const PI = 3.14; // ne peut pas changer<br>let score = 0; score += 10; // mutable → 10 ✓<br>var x = 1; // éviter : fuite hors des blocs if/for</div>
+                                    <div class="concept-example"><strong>Exemple</strong>const PI = 3.14; // ne peut pas
+                                        changer<br>let score = 0; score += 10; // mutable → 10 ✓<br>var x = 1; // éviter
+                                        : fuite hors des blocs if/for</div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">🔧</div>
@@ -4467,7 +4604,9 @@ RELACHER(u, v, w)
                                     <div class="concept-desc">const fn = (a, b) =&gt; a + b; Syntaxe concise ES6. Pas de
                                         propre
                                         "this" — hérite du contexte parent.</div>
-                                    <div class="concept-example"><strong>Exemple</strong>const double = n =&gt; n * 2;<br>const add = (a, b) =&gt; a + b;<br>[1,2,3].map(n =&gt; n * 2) → [2, 4, 6]<br>setTimeout(() =&gt; console.log('ok'), 1000);</div>
+                                    <div class="concept-example"><strong>Exemple</strong>const double = n =&gt; n *
+                                        2;<br>const add = (a, b) =&gt; a + b;<br>[1,2,3].map(n =&gt; n * 2) → [2, 4,
+                                        6]<br>setTimeout(() =&gt; console.log('ok'), 1000);</div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">🔄</div>
@@ -4475,7 +4614,11 @@ RELACHER(u, v, w)
                                     <div class="concept-desc">JS est mono-thread mais non-bloquant. L'Event Loop gère la
                                         file
                                         des callbacks asynchrones (setTimeout, fetch…).</div>
-                                    <div class="concept-example"><strong>Exemple</strong>console.log('1');<br>setTimeout(() =&gt; console.log('2'), 0);<br>console.log('3');<br>→ Affiche : 1, 3, 2 ← le setTimeout passe en file d'attente !</div>
+                                    <div class="concept-example">
+                                        <strong>Exemple</strong>console.log('1');<br>setTimeout(() =&gt;
+                                        console.log('2'), 0);<br>console.log('3');<br>→ Affiche : 1, 3, 2 ← le
+                                        setTimeout passe en file d'attente !
+                                    </div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">🔒</div>
@@ -4483,7 +4626,10 @@ RELACHER(u, v, w)
                                     <div class="concept-desc">Une fonction "se souvient" des variables de son contexte
                                         de
                                         création, même quand ce contexte n'est plus actif.</div>
-                                    <div class="concept-example"><strong>Exemple — Compteur</strong>function creerCompteur() {<br>&nbsp;&nbsp;let n = 0;<br>&nbsp;&nbsp;return () =&gt; ++n;<br>}<br>const c = creerCompteur();<br>c() → 1, c() → 2, c() → 3 ✓ (n persiste !)</div>
+                                    <div class="concept-example"><strong>Exemple — Compteur</strong>function
+                                        creerCompteur() {<br>&nbsp;&nbsp;let n = 0;<br>&nbsp;&nbsp;return () =&gt;
+                                        ++n;<br>}<br>const c = creerCompteur();<br>c() → 1, c() → 2, c() → 3 ✓ (n
+                                        persiste !)</div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">🌐</div>
@@ -4492,7 +4638,10 @@ RELACHER(u, v, w)
                                         modifie
                                         le
                                         HTML en temps réel via le Document Object Model.</div>
-                                    <div class="concept-example"><strong>Exemple</strong>const btn = document.querySelector('#monBtn');<br>btn.addEventListener('click', () =&gt; {<br>&nbsp;&nbsp;document.querySelector('h1').textContent = 'Cliqué !';<br>});<br>→ Le titre change au clic, sans recharger ✓</div>
+                                    <div class="concept-example"><strong>Exemple</strong>const btn =
+                                        document.querySelector('#monBtn');<br>btn.addEventListener('click', () =&gt;
+                                        {<br>&nbsp;&nbsp;document.querySelector('h1').textContent = 'Cliqué
+                                        !';<br>});<br>→ Le titre change au clic, sans recharger ✓</div>
                                 </div>
                                 <div class="concept-card">
                                     <div class="concept-icon">⏳</div>
@@ -4500,7 +4649,11 @@ RELACHER(u, v, w)
                                     <div class="concept-desc">async/await rend le code asynchrone aussi lisible que du
                                         code
                                         synchrone. try/catch pour la gestion d'erreurs.</div>
-                                    <div class="concept-example"><strong>Exemple — Fetch API</strong>async function charger() {<br>&nbsp;&nbsp;try {<br>&nbsp;&nbsp;&nbsp;&nbsp;const res = await fetch('/api/data');<br>&nbsp;&nbsp;&nbsp;&nbsp;const json = await res.json();<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(json);<br>&nbsp;&nbsp;} catch(e) { console.error(e); }<br>}</div>
+                                    <div class="concept-example"><strong>Exemple — Fetch API</strong>async function
+                                        charger() {<br>&nbsp;&nbsp;try {<br>&nbsp;&nbsp;&nbsp;&nbsp;const res = await
+                                        fetch('/api/data');<br>&nbsp;&nbsp;&nbsp;&nbsp;const json = await
+                                        res.json();<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(json);<br>&nbsp;&nbsp;}
+                                        catch(e) { console.error(e); }<br>}</div>
                                 </div>
                             </div>
                         </div>
@@ -6091,8 +6244,13 @@ attendre(100).then(() => console.log('✓ Promesse résolue'));</textarea>
                     <div class="footer-contact-item">
                         <span class="footer-contact-icon">📧</span>
                         <div style="display:flex;flex-direction:column;gap:3px">
-                            <a href="/cdn-cgi/l/email-protection#ffbd908a8d9eEME9M9cSy9FvfHvcx2gMPkp1H5Dj4YaKufPRsAyon8Tf"><span class="__cf_email__" data-cfemail="aceec3d9decdc4c0cd82c0cdc7c4c8cddeecc9c2dfd8d8c5cf82c8d6">[email&#160;protected]</span></a>
-                            <a href="/cdn-cgi/l/email-protection#d0bca4b8febaa2a290b7bdb1b9bcfeb3bfbd"><span class="__cf_email__" data-cfemail="f69a829ed89c8484b6919b979f9ad895999b">[email&#160;protected]</span></a>
+                            <a
+                                href="/cdn-cgi/l/email-protection#ffbd908a8d9eEME9M9cSy9FvfHvcx2gMPkp1H5Dj4YaKufPRsAyon8Tf"><span
+                                    class="__cf_email__"
+                                    data-cfemail="aceec3d9decdc4c0cd82c0cdc7c4c8cddeecc9c2dfd8d8c5cf82c8d6">[email&#160;protected]</span></a>
+                            <a href="/cdn-cgi/l/email-protection#d0bca4b8febaa2a290b7bdb1b9bcfeb3bfbd"><span
+                                    class="__cf_email__"
+                                    data-cfemail="f69a829ed89c8484b6919b979f9ad895999b">[email&#160;protected]</span></a>
                         </div>
                     </div>
                     <div class="footer-contact-item">
@@ -6121,9 +6279,10 @@ attendre(100).then(() => console.log('✓ Promesse résolue'));</textarea>
             <p class="footer-copy" data-i18n="footer-copy">© 2025 lth.JR · BOURAHLA LAKHDAR · TOUS DROITS RÉSERVÉS</p>
             <p class="footer-copy">lth.JR FULL PROGRAMMING GUIDE</p>
             <div class="footer-legal-links">
-                <a href="#" onclick="openPrivacy();return false;" data-i18n="footer-privacy">Politique de confidentialité</a>
+                <a href="#" onclick="openPrivacy();return false;" data-i18n="footer-privacy">Politique de
+                    confidentialité</a>
                 <span style="color:var(--border)">·</span>
-                <a href="/cdn-cgi/l/email-protection#53313c2621323b3f327d3f32383b37322113343e323a3f7d303c3e" data-i18n="footer-contact-link">Contact</a>
+                <a href="/cdn-cgi/l/email-protection#e0828f959281888c81ce8c818b88848192a0878d81898cce838f8d" data-i18n="footer-contact-link">Contact</a>
                 <span style="color:var(--border)">·</span>
                 <a href="#" onclick="openAbout();return false;" data-i18n="footer-about">À propos</a>
             </div>
@@ -6131,61 +6290,97 @@ attendre(100).then(() => console.log('✓ Promesse résolue'));</textarea>
     </footer>
 
     <!-- ══ MODAL POLITIQUE DE CONFIDENTIALITÉ ══ -->
-    <div id="privacy-modal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.75);backdrop-filter:blur(4px);overflow-y:auto;" onclick="if(event.target===this)closePrivacy()">
-        <div style="max-width:680px;margin:3rem auto;background:var(--bg2,#161622);border:1px solid var(--border,#2a2a3a);border-radius:16px;padding:2.5rem;color:var(--text,#e8e8f0);font-family:var(--font-sans,'Inter',sans-serif);font-size:0.92rem;line-height:1.7;position:relative;">
-            <button onclick="closePrivacy()" style="position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--text-muted,#8888aa);font-size:1.4rem;cursor:pointer;line-height:1;" title="Fermer">✕</button>
-            <h2 id="privacy-title" style="font-size:1.4rem;margin-bottom:1.5rem;color:var(--html,#e34c26);">🔒 Politique de confidentialité</h2>
+    <div id="privacy-modal"
+        style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.75);backdrop-filter:blur(4px);overflow-y:auto;"
+        onclick="if(event.target===this)closePrivacy()">
+        <div
+            style="max-width:680px;margin:3rem auto;background:var(--bg2,#161622);border:1px solid var(--border,#2a2a3a);border-radius:16px;padding:2.5rem;color:var(--text,#e8e8f0);font-family:var(--font-sans,'Inter',sans-serif);font-size:0.92rem;line-height:1.7;position:relative;">
+            <button onclick="closePrivacy()"
+                style="position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--text-muted,#8888aa);font-size:1.4rem;cursor:pointer;line-height:1;"
+                title="Fermer">✕</button>
+            <h2 id="privacy-title" style="font-size:1.4rem;margin-bottom:1.5rem;color:var(--html,#e34c26);">🔒 Politique
+                de confidentialité</h2>
             <div id="privacy-content">
                 <p><strong>Dernière mise à jour :</strong> Mars 2025</p>
-                <p>Bienvenue sur <strong>lth.JR Web Dev Guide</strong> (ci-après « le Site »). Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos données lorsque vous visitez notre site.</p>
+                <p>Bienvenue sur <strong>lth.JR Web Dev Guide</strong> (ci-après « le Site »). Cette politique de
+                    confidentialité explique comment nous collectons, utilisons et protégeons vos données lorsque vous
+                    visitez notre site.</p>
 
                 <h3 style="margin-top:1.25rem;color:var(--css,#264de4);">1. Données collectées</h3>
-                <p>Le Site est un guide statique hébergé sur GitHub Pages. Nous ne collectons <strong>aucune donnée personnelle</strong> directement. Cependant, les services tiers suivants peuvent collecter des données :</p>
+                <p>Le Site est un guide statique hébergé sur GitHub Pages. Nous ne collectons <strong>aucune donnée
+                        personnelle</strong> directement. Cependant, les services tiers suivants peuvent collecter des
+                    données :</p>
                 <ul style="padding-left:1.5rem;margin-top:0.5rem;">
-                    <li><strong>GitHub Pages</strong> — hébergement du site, peut enregistrer des logs d'accès (adresse IP, navigateur, pages visitées).</li>
-                    <li><strong>Google AdSense</strong> (si activé) — peut utiliser des cookies pour afficher des publicités personnalisées.</li>
-                    <li><strong>Google Analytics</strong> (si activé) — peut collecter des données de navigation anonymisées.</li>
+                    <li><strong>GitHub Pages</strong> — hébergement du site, peut enregistrer des logs d'accès (adresse
+                        IP, navigateur, pages visitées).</li>
+                    <li><strong>Google AdSense</strong> (si activé) — peut utiliser des cookies pour afficher des
+                        publicités personnalisées.</li>
+                    <li><strong>Google Analytics</strong> (si activé) — peut collecter des données de navigation
+                        anonymisées.</li>
                 </ul>
 
                 <h3 style="margin-top:1.25rem;color:var(--css,#264de4);">2. Cookies</h3>
-                <p>Le Site lui-même n'utilise pas de cookies. Les services tiers intégrés (Google AdSense, etc.) peuvent déposer des cookies sur votre appareil. Vous pouvez les désactiver dans les paramètres de votre navigateur.</p>
+                <p>Le Site lui-même n'utilise pas de cookies. Les services tiers intégrés (Google AdSense, etc.) peuvent
+                    déposer des cookies sur votre appareil. Vous pouvez les désactiver dans les paramètres de votre
+                    navigateur.</p>
 
                 <h3 style="margin-top:1.25rem;color:var(--css,#264de4);">3. Publicités (Google AdSense)</h3>
-                <p>Ce site peut afficher des publicités via Google AdSense. Google utilise des cookies pour diffuser des annonces personnalisées basées sur vos visites précédentes. Vous pouvez désactiver la personnalisation des annonces sur <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener" style="color:var(--js,#f7ca18);">google.com/settings/ads</a>.</p>
+                <p>Ce site peut afficher des publicités via Google AdSense. Google utilise des cookies pour diffuser des
+                    annonces personnalisées basées sur vos visites précédentes. Vous pouvez désactiver la
+                    personnalisation des annonces sur <a href="https://www.google.com/settings/ads" target="_blank"
+                        rel="noopener" style="color:var(--js,#f7ca18);">google.com/settings/ads</a>.</p>
 
                 <h3 style="margin-top:1.25rem;color:var(--css,#264de4);">4. Données stockées localement</h3>
-                <p>Le Site peut utiliser <code>localStorage</code> pour sauvegarder vos préférences (langue, thème). Ces données restent sur votre appareil et ne sont jamais envoyées à un serveur.</p>
+                <p>Le Site peut utiliser <code>localStorage</code> pour sauvegarder vos préférences (langue, thème). Ces
+                    données restent sur votre appareil et ne sont jamais envoyées à un serveur.</p>
 
                 <h3 style="margin-top:1.25rem;color:var(--css,#264de4);">5. Droits des utilisateurs (RGPD)</h3>
-                <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
+                <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits
+                    suivants :</p>
                 <ul style="padding-left:1.5rem;margin-top:0.5rem;">
                     <li>Droit d'accès à vos données personnelles</li>
                     <li>Droit de rectification et d'effacement</li>
                     <li>Droit d'opposition au traitement</li>
                 </ul>
-                <p style="margin-top:0.5rem;">Pour exercer ces droits, contactez-nous à : <a href="/cdn-cgi/l/email-protection#bedcd1cbccdfd6d2df90d2dfd5d6dadfccfed9d3dfd7d290ddd1d3" style="color:var(--js,#f7ca18);"><span class="__cf_email__" data-cfemail="15777a6067EME9M9cSy9FvfHvcx2gMPkp1H5Dj4YaKufPRsAyon8Tf">[email&#160;protected]</span></a></p>
+                <p style="margin-top:0.5rem;">Pour exercer ces droits, contactez-nous à : <a href="/cdn-cgi/l/email-protection#d5b7baa0a7EME9M9cSy9FvfHvcx2gMPkp1H5Dj4YaKufPRsAyon8Tf" style="color:var(--js,#f7ca18);"><span class="__cf_email__" data-cfemail="3c5e53494e5d54505d12505d5754585d4e7c5b515d5550125f5351">[email&#160;protected]</span></a></p>
 
                 <h3 style="margin-top:1.25rem;color:var(--css,#264de4);">6. Contact</h3>
                 <p>Responsable du traitement : <strong>BOURAHLA LAKHDAR</strong><br>
-                Email : <a href="/cdn-cgi/l/email-protection#a2c0cdd7d0c3cacec38ccec3c9cac6c3d0e2c5cfc3cbce8cc1cdcf" style="color:var(--js,#f7ca18);"><span class="__cf_email__" data-cfemail="05676a7077EME9M9cSy9FvfHvcx2gMPkp1H5Dj4YaKufPRsAyon8Tf">[email&#160;protected]</span></a><br>
-                Site : <a href="https://lthjrr213.github.io/lthtutos/" target="_blank" rel="noopener" style="color:var(--js,#f7ca18);">lthjrr213.github.io/lthtutos</a></p>
+                    Email : <a href="/cdn-cgi/l/email-protection#d0b2bfa5a2b1b8bcb1febcb1bbb8b4b1a290b7bdb1b9bcfeb3bfbd" style="color:var(--js,#f7ca18);"><span class="__cf_email__" data-cfemail="d0b2bfa5a2b1b8bcb1febcb1bbb8b4b1a290b7bdb1b9bcfeb3bfbd">[email&#160;protected]</span></a><br>
+                    Site : <a href="https://lthjrr213.github.io/lthtutos/" target="_blank" rel="noopener"
+                        style="color:var(--js,#f7ca18);">lthjrr213.github.io/lthtutos</a></p>
             </div>
-            <button onclick="closePrivacy()" style="margin-top:2rem;padding:0.6rem 1.5rem;background:var(--html,#e34c26);color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:600;" data-i18n="modal-close">Fermer</button>
+            <button onclick="closePrivacy()"
+                style="margin-top:2rem;padding:0.6rem 1.5rem;background:var(--html,#e34c26);color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:600;"
+                data-i18n="modal-close">Fermer</button>
         </div>
     </div>
 
     <!-- ══ MODAL À PROPOS ══ -->
-    <div id="about-modal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.75);backdrop-filter:blur(4px);overflow-y:auto;" onclick="if(event.target===this)closeAbout()">
-        <div style="max-width:600px;margin:3rem auto;background:var(--bg2,#161622);border:1px solid var(--border,#2a2a3a);border-radius:16px;padding:2.5rem;color:var(--text,#e8e8f0);font-family:var(--font-sans,'Inter',sans-serif);font-size:0.92rem;line-height:1.7;position:relative;">
-            <button onclick="closeAbout()" style="position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--text-muted,#8888aa);font-size:1.4rem;cursor:pointer;" title="Fermer">✕</button>
+    <div id="about-modal"
+        style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.75);backdrop-filter:blur(4px);overflow-y:auto;"
+        onclick="if(event.target===this)closeAbout()">
+        <div
+            style="max-width:600px;margin:3rem auto;background:var(--bg2,#161622);border:1px solid var(--border,#2a2a3a);border-radius:16px;padding:2.5rem;color:var(--text,#e8e8f0);font-family:var(--font-sans,'Inter',sans-serif);font-size:0.92rem;line-height:1.7;position:relative;">
+            <button onclick="closeAbout()"
+                style="position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--text-muted,#8888aa);font-size:1.4rem;cursor:pointer;"
+                title="Fermer">✕</button>
             <h2 style="font-size:1.4rem;margin-bottom:1.5rem;color:var(--js,#f7ca18);">👨‍💻 À propos</h2>
-            <p><strong>lth.JR Web Dev Guide</strong> est un guide interactif gratuit pour apprendre les fondamentaux du développement web front-end : HTML, CSS et JavaScript.</p>
-            <p style="margin-top:1rem;">Ce site a été conçu pour les débutants et les développeurs intermédiaires qui souhaitent maîtriser les trois piliers du web moderne, avec des exemples pratiques, un quiz interactif et un IDE en ligne.</p>
+            <p><strong>lth.JR Web Dev Guide</strong> est un guide interactif gratuit pour apprendre les fondamentaux du
+                développement web front-end : HTML, CSS et JavaScript.</p>
+            <p style="margin-top:1rem;">Ce site a été conçu pour les débutants et les développeurs intermédiaires qui
+                souhaitent maîtriser les trois piliers du web moderne, avec des exemples pratiques, un quiz interactif
+                et un IDE en ligne.</p>
             <p style="margin-top:1rem;"><strong>Auteur :</strong> BOURAHLA LAKHDAR<br>
-            <strong>Email :</strong> <a href="/cdn-cgi/l/email-protection#7715180205161f1b16591b161c1f13160537101a161e1b5914181a" style="color:var(--js,#f7ca18);"><span class="__cf_email__" data-cfemail="2745485255464f4b46094b464c4f43465567404a464e4b0944484a">[email&#160;protected]</span></a><br>
-            <strong>GitHub :</strong> <a href="https://github.com/lthjrr213" target="_blank" rel="noopener" style="color:var(--js,#f7ca18);">github.com/lthjrr213</a></p>
-            <p style="margin-top:1rem;color:var(--text-muted,#8888aa);font-size:0.82rem;">Ce site est open-source et gratuit. Aucune inscription requise.</p>
-            <button onclick="closeAbout()" style="margin-top:2rem;padding:0.6rem 1.5rem;background:var(--js,#f7ca18);color:#000;border:none;border-radius:8px;cursor:pointer;font-weight:600;" data-i18n="modal-close">Fermer</button>
+                <strong>Email :</strong> <a href="/cdn-cgi/l/email-protection#aac8c5dfd8EME9M9cSy9FvfHvcx2gMPkp1H5Dj4YaKufPRsAyon8Tf" style="color:var(--js,#f7ca18);"><span class="__cf_email__" data-cfemail="84e6ebf1f6e5ece8e5aae8e5efece0e5f6c4e3e9e5ede8aae7ebe9">[email&#160;protected]</span></a><br>
+                <strong>GitHub :</strong> <a href="https://github.com/lthjrr213" target="_blank" rel="noopener"
+                    style="color:var(--js,#f7ca18);">github.com/lthjrr213</a>
+            </p>
+            <p style="margin-top:1rem;color:var(--text-muted,#8888aa);font-size:0.82rem;">Ce site est open-source et
+                gratuit. Aucune inscription requise.</p>
+            <button onclick="closeAbout()"
+                style="margin-top:2rem;padding:0.6rem 1.5rem;background:var(--js,#f7ca18);color:#000;border:none;border-radius:8px;cursor:pointer;font-weight:600;"
+                data-i18n="modal-close">Fermer</button>
         </div>
     </div>
 
@@ -6196,9 +6391,10 @@ attendre(100).then(() => console.log('✓ Promesse résolue'));</textarea>
     <!-- ══════════════════════════════════════
      JAVASCRIPT
 ══════════════════════════════════════ -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
         /* Cloudflare email-decode stub */
-        if(typeof window.__cfDecodeEmail === "undefined") window.__cfDecodeEmail = function(){};
+        if (typeof window.__cfDecodeEmail === "undefined") window.__cfDecodeEmail = function () { };
     </script>
     <script>
         // ─── NAVBAR ───────────────────────────────
@@ -7832,7 +8028,23 @@ A→B, A→C, B→D, C→D → ordre : A, B, C, D (ou A, C, B, D)`,
             const cacheKey = `${targetLang}:${text}`;
             if (aiTranslationCache[cacheKey]) return aiTranslationCache[cacheKey];
             try {
-                const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=fr&tl=${targetLang}&dt=t&q=${encodeURIComponent(text)}`;
+                // Nettoyer le texte : supprimer les caractères de substitution et surrogates invalides
+                const safeText = text.replace(/[\uFFFD\uFFFE\uFFFF]/g, '')
+                                     .replace(/[\uD800-\uDFFF]/g, '') // surrogates isolés
+                                     .trim();
+                if (!safeText) return text;
+
+                let encoded;
+                try {
+                    encoded = encodeURIComponent(safeText);
+                } catch (uriErr) {
+                    // Fallback : encoder caractère par caractère en ignorant ceux qui posent problème
+                    encoded = safeText.split('').map(c => {
+                        try { return encodeURIComponent(c); } catch { return ''; }
+                    }).join('');
+                }
+
+                const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=fr&tl=${targetLang}&dt=t&q=${encoded}`;
                 const res = await fetch(url);
                 const data = await res.json();
                 // La réponse est un tableau imbriqué : [[["texte traduit","original",...],...],...]
@@ -8054,7 +8266,7 @@ A→B, A→C, B→D, C→D → ordre : A, B, C, D (ou A, C, B, D)`,
         // ── Helpers Quiz / Exercices (domaine-aware) ──
         function goToQuiz() {
             const map = {
-                algo:     'algo-quiz-section',
+                algo: 'algo-quiz-section',
                 frontend: 'quiz-section',
             };
             const target = map[currentDomain] || 'quiz-section';
@@ -8062,7 +8274,7 @@ A→B, A→C, B→D, C→D → ordre : A, B, C, D (ou A, C, B, D)`,
         }
         function goToExercices() {
             const map = {
-                algo:     'algo-exercices-section',
+                algo: 'algo-exercices-section',
                 frontend: 'exercices-section',
             };
             const target = map[currentDomain] || 'exercices-section';
@@ -8070,20 +8282,20 @@ A→B, A→C, B→D, C→D → ordre : A, B, C, D (ou A, C, B, D)`,
         }
 
         // ── Exposition globale des fonctions appelées via onclick ──
-        window.openPrivacy  = function() { document.getElementById('privacy-modal').style.display = 'block'; document.body.style.overflow='hidden'; };
-        window.closePrivacy = function() { document.getElementById('privacy-modal').style.display = 'none';  document.body.style.overflow=''; };
-        window.openAbout    = function() { document.getElementById('about-modal').style.display  = 'block'; document.body.style.overflow='hidden'; };
-        window.closeAbout   = function() { document.getElementById('about-modal').style.display  = 'none';  document.body.style.overflow=''; };
-        window.switchDomain    = switchDomain;
-        window.buildSubnav     = buildSubnav;
-        window.showSubnav      = function() { document.getElementById('subnav').classList.add('subnav-visible'); };
-        window.toggleSubcat    = toggleSubcat;
+        window.openPrivacy = function () { document.getElementById('privacy-modal').style.display = 'block'; document.body.style.overflow = 'hidden'; };
+        window.closePrivacy = function () { document.getElementById('privacy-modal').style.display = 'none'; document.body.style.overflow = ''; };
+        window.openAbout = function () { document.getElementById('about-modal').style.display = 'block'; document.body.style.overflow = 'hidden'; };
+        window.closeAbout = function () { document.getElementById('about-modal').style.display = 'none'; document.body.style.overflow = ''; };
+        window.switchDomain = switchDomain;
+        window.buildSubnav = buildSubnav;
+        window.showSubnav = function () { document.getElementById('subnav').classList.add('subnav-visible'); };
+        window.toggleSubcat = toggleSubcat;
         window.scrollToSection = scrollToSection;
-        window.toggleMenu      = toggleMenu;
-        window.switchTab       = switchTab;
-        window.switchIDE       = switchIDE;
-        window.goToQuiz        = goToQuiz;
-        window.goToExercices   = goToExercices;
+        window.toggleMenu = toggleMenu;
+        window.switchTab = switchTab;
+        window.switchIDE = switchIDE;
+        window.goToQuiz = goToQuiz;
+        window.goToExercices = goToExercices;
 
         // subnav shown only after user clicks a domain tab
 
@@ -8118,4 +8330,17 @@ A→B, A→C, B→D, C→D → ordre : A, B, C, D (ou A, C, B, D)`,
                     el.style.transform = 'translateY(-30px)';
                     setTimeout(() => {
                         el.textContent = words[idx].text;
-                        el.s
+                        el.style.color = words[idx].color;
+                        el.style.transform = 'translateY(30px)';
+                        requestAnimationFrame(() => {
+                            el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                            el.style.opacity = '1';
+                            el.style.transform = 'translateY(0)';
+                        });
+                    }, 350);
+                });
+            }, 2800);
+        })();
+    </script>
+</body>
+</html>
